@@ -18,6 +18,7 @@
 
 # @start 1
 
+AC_CONFIG_MACRO_DIR([config])
 AC_INIT
 
 m4_include(config/ax_compiler_vendor.m4)

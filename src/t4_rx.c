@@ -78,6 +78,10 @@
 #include "floating_fudge.h"
 #include <tiffio.h>
 
+#ifdef __MINGW32__
+#include <winsock2.h>
+#endif
+
 #include "spandsp/telephony.h"
 #include "spandsp/logging.h"
 #include "spandsp/bit_operations.h"

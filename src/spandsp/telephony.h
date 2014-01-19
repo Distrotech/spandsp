@@ -26,7 +26,7 @@
 #if !defined(_SPANDSP_TELEPHONY_H_)
 #define _SPANDSP_TELEPHONY_H_
 
-#if defined(_M_IX86)  ||  defined(_M_X64)
+#if (defined(_M_IX86)  ||  defined(_M_X64)) && !defined(__MINGW32__)
 #if defined(LIBSPANDSP_EXPORTS)
 #define SPAN_DECLARE(type)              __declspec(dllexport) type __stdcall
 #define SPAN_DECLARE_NONSTD(type)       __declspec(dllexport) type __cdecl
